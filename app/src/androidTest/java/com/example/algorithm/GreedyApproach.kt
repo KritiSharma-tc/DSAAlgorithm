@@ -1,8 +1,7 @@
 package com.example.algorithm
 
 fun main() {
-    print("Enter amount: ")
-    var amount = readLine()!!.toInt()
+    var amount = 72
 
     val coins = intArrayOf(25, 10, 5, 1)
     val result = mutableListOf<Int>()
