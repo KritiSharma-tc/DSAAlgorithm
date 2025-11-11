@@ -7,8 +7,9 @@ fun main() {
     var ans = 0
 
     while (left <= right) {
-        val mid = (left + right) / 2
-        if (mid * mid == x) {
+        val mid = left + (right - left) / 2
+        val square = mid * mid
+        if (square == x) {
             ans = mid
             break
         } else if (mid * mid < x) {
