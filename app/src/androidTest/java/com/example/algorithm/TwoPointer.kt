@@ -2,10 +2,12 @@ package com.example.algorithm
 
 fun main() {
     val arr = intArrayOf(3, 2, 6, 4, 6, 7, 9)
+    arr.sort()
+    println("Sorted array: ${arr.joinToString()}")
     val target = 9
 
-    var left = 0                // Start pointer
-    var right = arr.size - 1    // End pointer
+    var left = 0
+    var right = arr.size - 1
     var found = false
 
     while (left < right) {
